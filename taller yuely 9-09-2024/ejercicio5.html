@@ -1,0 +1,19 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5, asegurando que el navegador interprete el código HTML correctamente -->
+<html lang="en"> <!-- Inicia el documento HTML especificando que el idioma principal es inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento como UTF-8, que soporta una amplia gama de caracteres internacionales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para que el contenido se ajuste al ancho del dispositivo y tenga un nivel de zoom inicial de 1.0 en dispositivos móviles -->
+    <link rel="stylesheet" href="css/style-ejercicio5.css"> <!-- Enlaza una hoja de estilo externa para aplicar estilos CSS al documento HTML. El archivo CSS está en la carpeta 'css' y se llama 'style-ejercicio5.css' -->
+    <title>Ejercicio 5</title> <!-- Define el título de la página que aparece en la pestaña del navegador -->
+</head>
+<body onload="iniciarSemaforo()"> <!-- Llama a la función JavaScript 'iniciarSemaforo()' cuando la página se carga, lo que probablemente inicia la simulación del semáforo -->
+
+    <h1>Simulador de Semaforo</h1> <!-- Encabezado principal de la página con el texto "Simulador de Semáforo", indicando que la página está relacionada con una simulación de semáforo -->
+
+    <div id="rojo" class="circulo"></div> <!-- Div para representar la luz roja del semáforo. Utiliza el ID 'rojo' y la clase 'circulo' para aplicar estilos -->
+    <div id="amarillo" class="circulo"></div> <!-- Div para representar la luz amarilla del semáforo. Utiliza el ID 'amarillo' y la clase 'circulo' para aplicar estilos -->
+    <div id="verde" class="circulo"></div> <!-- Div para representar la luz verde del semáforo. Utiliza el ID 'verde' y la clase 'circulo' para aplicar estilos -->
+
+    <script src="js/main-ejercicio5.js"></script> <!-- Enlaza un archivo JavaScript externo que contiene la lógica para la simulación del semáforo. El archivo está en la carpeta 'js' y se llama 'main-ejercicio5.js' -->
+</body>
+</html>

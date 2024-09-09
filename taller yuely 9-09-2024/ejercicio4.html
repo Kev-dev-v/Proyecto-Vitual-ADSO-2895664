@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5, asegurando que el navegador interprete el código HTML correctamente -->
+<html lang="en"> <!-- Inicia el documento HTML especificando que el idioma principal es inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento como UTF-8, que soporta una amplia gama de caracteres internacionales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para que el contenido se ajuste al ancho del dispositivo y tenga un nivel de zoom inicial de 1.0 en dispositivos móviles -->
+    <title>Ejercicio 4</title> <!-- Define el título de la página que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <h1>A Calcular</h1> <!-- Encabezado principal de la página con el texto "A Calcular", indicando que la página está relacionada con cálculos -->
+
+    <input type="number" id="num1" placeholder="Número 1"> <!-- Campo de entrada para el primer número. El atributo 'type="number"' asegura que solo se puedan ingresar números. El 'placeholder' proporciona un texto de ejemplo dentro del campo de entrada -->
+
+    <select id="operacion"> <!-- Menú desplegable para seleccionar la operación matemática -->
+        <option value="+">+</option> <!-- Opción para sumar -->
+        <option value="-">-</option> <!-- Opción para restar -->
+        <option value="*">*</option> <!-- Opción para multiplicar -->
+        <option value="/">/</option> <!-- Opción para dividir -->
+    </select>
+
+    <input type="number" id="num2" placeholder="Número 2"> <!-- Campo de entrada para el segundo número. Similar al primer campo, permite ingresar números y muestra un texto de ejemplo -->
+
+    <button onclick="calcular()">Calcular</button> <!-- Botón que llama a la función JavaScript 'calcular()' cuando se hace clic. Esta función realizará el cálculo basado en los números y la operación seleccionada -->
+
+    <p id="resultado"></p> <!-- Elemento de párrafo con el ID 'resultado' donde se mostrará el resultado del cálculo realizado por la función 'calcular()' -->
+
+    <script src="js/main-ejercicio4.js"></script> <!-- Enlaza un archivo JavaScript externo que contiene la lógica para realizar los cálculos. El archivo está en la carpeta 'js' y se llama 'main-ejercicio4.js' -->
+</body>
+</html>

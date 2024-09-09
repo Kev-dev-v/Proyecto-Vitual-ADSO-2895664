@@ -1,0 +1,14 @@
+#cajaSlide {
+    display: block; /* Establece que el elemento con ID 'cajaSlide' se comporta como un bloque, ocupando toda la anchura disponible y comenzando en una nueva línea. */
+    margin: 0; /* Elimina cualquier margen alrededor del elemento con ID 'cajaSlide'. */
+    width: 100%; /* Establece que el ancho del elemento con ID 'cajaSlide' debe ocupar el 100% del ancho del contenedor padre. */
+    text-align: center; /* Centra el contenido del elemento con ID 'cajaSlide', incluyendo el contenido de los elementos secundarios como las imágenes. */
+}
+
+#cajaSlide img {
+    max-width: 800px; /* Establece el ancho máximo de las imágenes dentro del elemento con ID 'cajaSlide' a 800 píxeles. Las imágenes no se expandirán más allá de este tamaño. */
+    border: 10px solid black; /* Aplica un borde sólido de 10 píxeles de grosor y color negro alrededor de las imágenes. */
+    border-radius: 20px; /* Redondea las esquinas del borde de las imágenes con un radio de 20 píxeles, dando un efecto de bordes redondeados. */
+    box-shadow: 10px 10px 10px black; /* Añade una sombra de caja de 10 píxeles de desplazamiento horizontal, 10 píxeles de desplazamiento vertical y 10 píxeles de difuminado, con color negro. Esto crea un efecto de profundidad y destaca la imagen del fondo. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre las imágenes, indicando que son clicables. */
+}

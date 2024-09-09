@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5, asegurando que el navegador interprete el código HTML correctamente -->
+<html lang="en"> <!-- Inicia el documento HTML especificando que el idioma principal es inglés -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <meta name="author" content="Raul caro Pastorino"> <!-- Especifica el nombre del autor del documento HTML -->
+
+    <script> //Etiqueta script para conectar con el JavaSCript
+        
+        function viajarConSuerte(){ //Se invoca una funcion y se le asigna el nombre viajarConSuerte.
+            var x = Math.random() * 10; //Se define un variable y se le asigna el nombre de x, tambien se le asigna la propieda math random * 10 para que arroge un número rando engre el 1 y el 10
+            
+            //Condicionales logicos para que segun el numero que arroge el Math.random suceda alguna de las siguientes acciones.
+            var URL;
+                if(x <= 3){ // Si la variable x es menor o igual que tres el navegador sera redirigido a hotmal.
+                    URL = 'https://www.hotmail.com'; // A la variable URL se le asigna el valor de link que redirecciona el navegador a hotmail
+                }
+                else if(x <= 6){ // Si la variable x es menor o igual que seis el navegador sera redirigido a hotmal.
+                    URL = 'https://www.gmail.com'; // A la variable URL se le asigna el valor de link que redirecciona el navegador a gmail.
+                }else{
+                    URL = 'https://www.yahoo.com'; //Si el valor obtenido es diferente de 3 o 6 el navegador se redirecciona a yahoo
+                }
+            location.assign(URL); // Redirige el navegador a la URL especificada en la variable URL
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="titulo1">URL Aleatoria</h1>  <!--Se define un titulo con el tamaño h1 -->
+
+     <!-- Enlace que llama a la función viajarConSuerte() cuando se hace clic en él -->
+     <a href="javascript:viajarConSuerte();" title="Viajando con suerte">
+        Pulsa aquí para probar Suerte
+    </a>
+    
+</body>
+</html>

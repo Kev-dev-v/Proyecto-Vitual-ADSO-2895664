@@ -1,0 +1,35 @@
+body {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor principal del cuerpo del documento. */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en una columna, de arriba hacia abajo. */
+    align-items: center; /* Alinea los elementos secundarios horizontalmente en el centro del contenedor. */
+    justify-content: center; /* Alinea los elementos secundarios verticalmente en el centro del contenedor. */
+    height: 100vh; /* Establece la altura del cuerpo del documento al 100% de la altura de la ventana gráfica (viewport). */
+    margin: 0; /* Elimina cualquier margen predeterminado alrededor del cuerpo del documento. */
+    font-family: 'Arial', sans-serif; /* Define la fuente principal para el cuerpo del documento como 'Arial', con una fuente sans-serif alternativa en caso de que 'Arial' no esté disponible. */
+    color: white; /* Establece el color del texto en blanco. */
+    text-align: center; /* Centra el texto dentro del cuerpo del documento. */
+    background: linear-gradient(to bottom, #f0f8ff, #e6e6e6); /* Aplica un degradado lineal de arriba hacia abajo que va de un azul muy claro (#f0f8ff) a un gris claro (#e6e6e6) como fondo del cuerpo del documento. */
+}
+
+h1 {
+    color: black; /* Establece el color del texto del título (h1) en negro. */
+    font-weight: bold; /* Aplica un grosor de fuente negrita al título. */
+    font-size: 2.5em; /* Establece el tamaño de la fuente del título en 2.5 veces el tamaño de la fuente del elemento contenedor, haciendo que el título sea grande y prominente. */
+    margin-bottom: 20px; /* Añade un espacio de 20 píxeles en la parte inferior del título, separándolo de los elementos siguientes. */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3); /* Aplica una sombra al texto del título. La primera sombra es de 2 píxeles de desplazamiento horizontal y vertical, con un difuminado de 4 píxeles y color negro semitransparente (0.5). La segunda sombra es de color blanco semitransparente (0.3), añadiendo un efecto de resplandor suave alrededor del texto. */
+}
+
+.circulo {
+    width: 120px; /* Establece el ancho del elemento con la clase 'circulo' en 120 píxeles. */
+    height: 120px; /* Establece la altura del elemento con la clase 'circulo' en 120 píxeles. */
+    border-radius: 50%; /* Hace que el elemento tenga bordes redondeados completamente circulares. */
+    background-color: grey; /* Establece el color de fondo del elemento en gris. */
+    margin: 20px; /* Añade un espacio de 20 píxeles alrededor del elemento, separándolo de otros elementos. */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Aplica una sombra de caja con desplazamiento de 0 píxeles horizontal, 4 píxeles vertical, un difuminado de 15 píxeles y color negro semitransparente (0.6). Esto da un efecto de profundidad al elemento. */
+    transition: background-color 0.5s, transform 0.5s; /* Define una transición suave de 0.5 segundos para los cambios en el color de fondo y la transformación (como el escalado) del elemento. */
+}
+
+.circulo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del elemento en un 10% cuando el ratón pasa sobre él, creando un efecto de ampliación. */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8); /* Aumenta la sombra de caja del elemento a 6 píxeles de desplazamiento vertical, 20 píxeles de difuminado y color negro más oscuro (0.8) cuando el ratón pasa sobre él. Esto refuerza el efecto de profundidad y destaca el elemento. */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5, asegurando que el navegador interprete el código HTML correctamente -->
+<html lang="en"> <!-- Inicia el documento HTML especificando que el idioma principal es inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento como UTF-8, que soporta una amplia gama de caracteres internacionales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para que el contenido se ajuste al ancho del dispositivo y tenga un nivel de zoom inicial de 1.0 en dispositivos móviles -->
+    <link rel="stylesheet" href="css/style-ejercicio2.css"> <!-- Enlaza una hoja de estilo externa para aplicar estilos CSS al documento HTML. El archivo CSS está en la carpeta 'css' y se llama 'style-ejercicio2.css' -->
+    <title>Ejercicio 2</title> <!-- Define el título de la página que aparece en la pestaña del navegador -->
+</head>
+<body onload="iniciar();"> <!-- Llama a la función JavaScript 'iniciar()' cuando se carga la página -->
+
+    <h1 id="titulo1">Pase de Imágenes automático</h1> <!-- Encabezado principal de la página con el texto "Pase de Imágenes automático", identificado por el ID 'titulo1' -->
+
+    <div id="cajaSlide"> <!-- Contenedor para la imagen y los controles de usuario, identificado por el ID 'cajaSlide' -->
+        <img id="imgSlide" src="./images/img1.jpg" title="Imagen" alt="Imagen" onclick="rotarImagenes();"> <!-- Imagen que se mostrará en el pase de imágenes. Tiene el ID 'imgSlide', y se le asigna un archivo de imagen ubicado en la carpeta 'images'. Cuando se hace clic en la imagen, se llama a la función JavaScript 'rotarImagenes()' -->
+        
+        <br/><br> <!-- Salto de línea para agregar espacio adicional entre la imagen y el formulario de controles -->
+
+        <form> <!-- Contenedor para los controles de usuario -->
+            <input type="button" value="Parar" onclick="clearInterval(temporizador);"> <!-- Botón para detener el pase automático de imágenes. Llama a 'clearInterval(temporizador)' para detener el temporizador que controla el pase automático -->
+            
+            <input type="button" value="Continuar" onclick="iniciar();"> <!-- Botón para reanudar el pase automático de imágenes. Llama a la función JavaScript 'iniciar()' para reiniciar el temporizador -->
+        </form>
+    </div>
+    <script src="js/main-ejercicio2.js"></script> <!-- Enlaza un archivo JavaScript externo para aplicar funcionalidades interactivas. El archivo JavaScript está en la carpeta 'js' y se llama 'main-ejercicio2.js' -->
+</body>
+</html>

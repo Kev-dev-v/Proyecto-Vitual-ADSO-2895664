@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5, asegurando que el navegador interprete el código HTML correctamente -->
+<html lang="en"> <!-- Inicia el documento HTML especificando que el idioma principal es inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento como UTF-8, que soporta una amplia gama de caracteres internacionales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para que el contenido se ajuste al ancho del dispositivo y tenga un nivel de zoom inicial de 1.0 en dispositivos móviles -->
+    <title>ejercicio 3</title> <!-- Define el título de la página que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <h1>Adivina el Número</h1> <!-- Encabezado principal de la página con el texto "Adivina el Número" -->
+
+    <p>Intenta adivinar un número entre 1 y 100.</p> <!-- Texto descriptivo que instruye al usuario a adivinar un número en un rango específico -->
+
+    <input type="number" id="numero" placeholder="Escribe tu número"> <!-- Campo de entrada para que el usuario ingrese un número. El atributo 'type="number"' asegura que solo se puedan ingresar números. El 'placeholder' proporciona un texto de ejemplo dentro del campo de entrada -->
+    
+    <button onclick="adivinar()">Adivinar</button> <!-- Botón que llama a la función JavaScript 'adivinar()' cuando se hace clic. Esta función es responsable de procesar la entrada del usuario y determinar si la adivinanza es correcta -->
+
+    <p id="resultado"></p> <!-- Elemento de párrafo con el ID 'resultado' donde se mostrará el resultado del intento de adivinanza (por ejemplo, si el número adivinado es correcto o incorrecto) -->
+
+    <script src="js/main-ejercicio3.js"></script> <!-- Enlaza un archivo JavaScript externo que contiene la lógica para la funcionalidad de adivinar el número. El archivo está en la carpeta 'js' y se llama 'main-ejercicio3.js' -->
+</body>
+</html>
